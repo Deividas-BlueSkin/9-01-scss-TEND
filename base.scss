@@ -1,0 +1,61 @@
+@use "header.scss";
+@use "main.scss";
+@use "footer.scss";
+@use "var.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// $color-bc: white;
+
+
+
+body {
+    
+    padding-top: 1px;
+    margin-top: -1px;
+    margin-right: -1px;
+    margin-left: -1px;
+    // margin: 0;
+}
+
+.god-container {
+    width: var.$width-god;
+}
+
+// @mixin in {
+//     @media {
+//         @content;
+//     }
+// }
+
+// @include{
+
+// }
+
+// body {
+//     background-color: $color-bc;
+// }
+
+// /* DESKTOP FIRST pavyzdys */
+// @media (max-width: 799px) {
+// }
+
+// @media (max-width: 499px) {
+// }
+
+// @media (max-width: 299px) {
+// }
+
+// /* MOBILE FIRST pavyzdys */
+// @media (min-width: 300px) {
+// }
+
+// @media (min-width: 500px) {
+// }
+
+// @media (min-width: 800px) {
+// }

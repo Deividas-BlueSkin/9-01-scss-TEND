@@ -1,0 +1,103 @@
+@use "var.scss";
+
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+/* MAIN 01 */
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+.main-01 {
+    .grid-box {
+        width: var.$width;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 100px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 50px;
+
+            .title {
+                font-size: var.$font-size-main-01;
+                font-weight: bold;
+            }
+            .para {
+                font-size: var.$font-size-main-02;
+            }
+        }
+        .button {
+            width: 70%;
+
+            .upp {
+                text-transform: uppercase;
+            }
+        }
+        .svg {
+            margin: auto 50px;
+        }
+    }
+}
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+/* MAIN 02 */
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+
+.main-02 {
+    .grid-box {
+        width: var.$width;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 150px;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 100px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            padding-right: 10px;
+
+            .title {
+                font-size: var.$font-size-main-01;
+                font-weight: bold;
+            }
+            .para {
+                font-size: var.$font-size-main-02;
+            }
+        }
+        .grid-box-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            .card-2 {
+                box-shadow: 0 0 10px 10px rgba(0,0,0, 0.3);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                padding-right: 10px;
+
+                .icon {
+                    width: 48px;
+                    height: 48px;
+                    background-color: var.$color-text-01;
+                    padding: 10px;
+                    border-radius: var.$border-radius;
+                }
+
+                .title {
+                    font-size: var.$font-size-main-01;
+                    font-weight: bold;
+                }
+                .para {
+                    font-size: var.$font-size-main-02;
+                }
+            }
+        }
+    }
+}

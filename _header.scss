@@ -1,0 +1,68 @@
+@use "var.scss";
+
+.width-full
+{
+    width: 100%;
+}
+.height-full{
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.center-tb {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.center-lr {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    width: var.$width;
+}
+
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+/* SPECIFIC CLASSES */
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+
+.header-margin {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.img-text {
+    color: var.$color-text-01;
+    font-size: var.$font-size-head-01;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    margin-left: 12px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var.$color-text-03;
+    font-size: var.$font-size-head-02;
+    margin-left: 48px;
+
+    &.button {
+        color: var.$color-text-04;
+        background-color: var.$color-text-01;
+        border-radius: var.$border-radius;
+        padding: 8px 14px;
+    }
+}

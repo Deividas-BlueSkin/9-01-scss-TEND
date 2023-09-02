@@ -75,7 +75,7 @@
   gap: 100px;
   display: grid;
   grid-template-columns: auto auto;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .main-01 .grid-box .card {
   display: flex;
@@ -91,10 +91,10 @@
 .main-01 .grid-box .card .para {
   font-size: 20px;
 }
-.main-01 .grid-box .button {
+.main-01 .grid-box .card .button {
   width: 70%;
 }
-.main-01 .grid-box .button .upp {
+.main-01 .grid-box .card .button .upp {
   text-transform: uppercase;
 }
 .main-01 .grid-box .svg {
@@ -108,51 +108,262 @@
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  gap: 150px;
+  gap: 100px;
   display: grid;
-  grid-template-columns: auto auto;
-  margin-bottom: 100px;
+  grid-template-columns: 2fr 3fr;
+  margin-bottom: 150px;
 }
 .main-02 .grid-box .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 30px;
   padding-right: 10px;
 }
-.main-02 .grid-box .card .title {
+.main-02 .grid-box .card .title-1 {
+  font-size: 30px;
+  color: rgb(214, 139, 77);
+}
+.main-02 .grid-box .card .title-2 {
   font-size: 50px;
   font-weight: bold;
+  color: rgb(71, 129, 74);
 }
 .main-02 .grid-box .card .para {
   font-size: 20px;
+}
+.main-02 .grid-box .card .button {
+  width: 80%;
 }
 .main-02 .grid-box .grid-box-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 40px;
 }
 .main-02 .grid-box .grid-box-2 .card-2 {
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  padding-right: 10px;
+  padding: 40px;
+  border-radius: 5px;
+}
+.main-02 .grid-box .grid-box-2 .card-2.hover {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.main-02 .grid-box .grid-box-2 .card-2.hover .icon {
+  background-color: rgb(71, 129, 74);
+  border-radius: 5px;
 }
 .main-02 .grid-box .grid-box-2 .card-2 .icon {
   width: 48px;
   height: 48px;
-  background-color: rgb(71, 129, 74);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 .main-02 .grid-box .grid-box-2 .card-2 .title {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
 }
 .main-02 .grid-box .grid-box-2 .card-2 .para {
   font-size: 20px;
+}
+
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+/* MAIN 03 */
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+.main-03 {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  margin-bottom: 150px;
+}
+.main-03 .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.main-03 .titles .text {
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+.main-03 .titles .title-1 {
+  font-size: 30px;
+  color: rgb(214, 139, 77);
+}
+.main-03 .titles .title-2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(71, 129, 74);
+}
+.main-03 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.main-03 .grid .box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 50px 40px;
+}
+.main-03 .grid .box.hover {
+  background-color: rgb(71, 129, 74);
+}
+.main-03 .grid .box.hover .icon {
+  background-color: rgb(71, 129, 74);
+  border-radius: 5px;
+}
+.main-03 .grid .box.hover .title {
+  color: rgb(255, 255, 255);
+}
+.main-03 .grid .box.hover .para {
+  color: rgb(255, 255, 255);
+}
+.main-03 .grid .box .icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+.main-03 .grid .box .title {
+  font-size: 30px;
+}
+.main-03 .grid .box .title .upp {
+  text-transform: uppercase;
+}
+.main-03 .grid .box .para {
+  font-size: 20px;
+}
+
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+/* MAIN 04 */
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+.main-04 {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+.main-04 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.main-04 .grid .card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  margin-left: auto;
+}
+.main-04 .grid .card .title-1 {
+  font-size: 30px;
+  color: rgb(214, 139, 77);
+}
+.main-04 .grid .card .title-2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(71, 129, 74);
+}
+.main-04 .grid .card .para {
+  font-size: 20px;
+}
+.main-04 .grid .card .button {
+  width: 80%;
+}
+
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+/* MAIN 05 */
+/* [<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-=-=-=-=-=-=-=-=-=-=>][<=-=-= */
+.main-05 {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+.main-05 .flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-05 .flexbox .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.main-05 .flexbox .titles .upp {
+  text-transform: uppercase;
+}
+.main-05 .flexbox .titles .title-1 {
+  font-size: 30px;
+  color: rgb(214, 139, 77);
+}
+.main-05 .flexbox .titles .title-2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(71, 129, 74);
+}
+.main-05 .flexbox .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.main-05 .flexbox .nav .button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.main-05 .flexbox .nav .right {
+  border-radius: 50%;
+  padding: 9px 10px;
+  background-color: rgb(71, 129, 74);
+}
+.main-05 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.main-05 .grid .box {
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+}
+.main-05 .grid .box .flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+.main-05 .grid .box .flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.main-05 .grid .box .name-1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.main-05 .grid .box .name-2 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.main-05 .grid .box .para {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 80%;
 }
 
 .margin-center {

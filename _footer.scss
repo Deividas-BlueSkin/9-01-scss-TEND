@@ -1,40 +1,79 @@
 @use "var.scss";
 
-.margin-center {
-    margin: auto;
-}
+// .margin-center {
+//     margin: auto;
+// }
 
-.uppercase {
-    text-transform: uppercase;
-}
+// .uppercase {
+//     text-transform: uppercase;
+// }
 
-.grid {
-    display: grid;
-}
+// .grid {
+//     display: grid;
+// }
 
-.footer-margin {
-    margin-top: 64px;
-    margin-bottom: 64px;
-}
+// .footer-margin {
+//     margin-top: 64px;
+//     margin-bottom: 64px;
+// }
 
-.footer-grid-box {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-}
+// .footer-grid-box {
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: 1fr;
+// }
 
-.flex-col {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
+// .flex-col {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 5px;
+// }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+// .flex-row {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 20px;
+// }
 
-.footer-bc {
+// .footer-bc {
+//     background-color: rgb(253, 216, 182);
+//     padding-top: 1px;
+//     margin-top: -1px;
+//     padding-right: 1px;
+//     margin-right: -1px;
+//     padding-left: 1px;
+//     margin-left: -1px;
+//     padding-bottom: 1px;
+//     margin-bottom: -10px;
+
+//     width: var.$width-god;
+// }
+
+// .footer-title {
+//     color: var.$color-text-01;
+//     font-size: var.$font-size-head-02;
+//     margin-bottom: 5px;
+// }
+
+// .textarea {
+//     // margin: 64px;
+//     resize: none;
+//     width: auto;
+//     height: auto;
+//     margin-bottom: 15px;
+
+//     border: none;
+//     padding: 15px 25px;
+//     height: 113px;
+// }
+
+// .footer-button {
+//     color: var.$color-text-04;
+//     background-color: var.$color-text-01;
+//     border: none;
+//     padding: 20px 20px;
+// }
+
+.footer {
     background-color: rgb(253, 216, 182);
     padding-top: 1px;
     margin-top: -1px;
@@ -46,29 +85,114 @@
     margin-bottom: -10px;
 
     width: var.$width-god;
-}
 
-.footer-title {
-    color: var.$color-text-01;
-    font-size: var.$font-size-head-02;
-    margin-bottom: 5px;
-}
+    .container {
+        width: var.$width;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 64px;
+        margin-bottom: 64px;
 
-.textarea {
-    // margin: 64px;
-    resize: none;
-    width: auto;
-    height: auto;
-    margin-bottom: 15px;
+        // ?? maybe remove ??
+        // width: 100%;
+        // height: 100%;
+        // ----------------
 
-    border: none;
-    padding: 15px 25px;
-    height: 113px;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
 
-.footer-button {
-    color: var.$color-text-04;
-    background-color: var.$color-text-01;
-    border: none;
-    padding: 20px 20px;
+            .flex-1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .flex {
+                    display: flex;
+                }
+
+                .text {
+                    color: var.$color-text-01;
+                    font-size: var.$font-size-head-01;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    margin-left: 12px;
+
+                    margin-top: auto;
+                    margin-bottom: auto;
+
+                    // ?
+                    height: 100%;
+                }
+
+                .upp {
+                    text-transform: uppercase;
+                }
+            }
+
+            .flex-2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: auto;
+
+                // ?
+                height: 100%;
+
+                .title {
+                    color: var.$color-text-01;
+                    font-size: var.$font-size-head-02;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .flex-3{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: auto;
+
+                // ?
+                height: 100%;
+
+                .title{
+                    color: var.$color-text-01;
+                    font-size: var.$font-size-head-02;
+                    margin-bottom: 5px;
+                }
+
+                .upp {
+                    text-transform: uppercase;
+                }
+
+                .textarea{
+                    resize: none;
+                    width: auto;
+                    height: auto;
+                    margin-bottom: 15px;
+                
+                    border: none;
+                    padding: 15px 25px;
+                    height: 113px;
+                }
+
+                .button {
+                    color: var.$color-text-04;
+                    background-color: var.$color-text-01;
+                    border: none;
+                    padding: 20px 20px;
+
+                    &.flex{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+
+
+            }
+        }
+    }
 }

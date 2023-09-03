@@ -28,8 +28,17 @@
                 font-size: var.$font-size-main-04;
             }
             .button {
+                color: var.$color-text-04;
+                background-color: var.$color-text-01;
+                border: none;
+                padding: 20px 20px;
                 width: 70%;
 
+                &.flex {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
                 .upp {
                     text-transform: uppercase;
                 }
@@ -75,8 +84,22 @@
             }
 
             .button {
+                color: var.$color-text-04;
+                background-color: var.$color-text-01;
+                border: none;
+                padding: 20px 20px;
                 width: 80%;
+
+                &.flex {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .upp {
+                    text-transform: uppercase;
+                }
             }
+            
         }
         .grid-box-2 {
             display: grid;
@@ -248,10 +271,23 @@
             .para {
                 font-size: var.$font-size-main-04;
             }
-
             .button {
+                color: var.$color-text-04;
+                background-color: var.$color-text-01;
+                border: none;
+                padding: 20px 20px;
                 width: 80%;
+
+                &.flex {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .upp {
+                    text-transform: uppercase;
+                }
             }
+            
         }
     }
 }
@@ -313,13 +349,12 @@
         }
     }
 
-    .grid{
+    .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
-        
 
-        .box{
+        .box {
             background-color: rgb(241, 241, 241);
             border-radius: var.$border-radius;
 
@@ -328,25 +363,25 @@
 
             padding: 30px 30px;
 
-            .flex-row{
+            .flex-row {
                 display: flex;
                 flex-direction: row;
                 gap: 0;
             }
-            .flex-col{
+            .flex-col {
                 display: flex;
                 flex-direction: column;
             }
 
-            .name-1{
+            .name-1 {
                 font-weight: bold;
                 font-size: var.$font-size-main-04;
             }
-            .name-2{
+            .name-2 {
                 text-transform: uppercase;
                 font-size: var.$font-size-main-05;
             }
-            .para{
+            .para {
                 font-size: var.$font-size-main-04;
                 margin-top: 20px;
                 width: 80%;
